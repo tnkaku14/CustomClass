@@ -37,6 +37,10 @@ public class BrawlStarsCharacter{
       this.hasHypercharge = hasHypercharge;
       this.ammo = ammo;
    }
+   public BrawlStarsCharacter(String name, int level){
+      this.name = name;
+      this.level = level;
+   }
    
    //methods
    public void levelUp(){
@@ -64,10 +68,11 @@ public class BrawlStarsCharacter{
       System.out.println("Rarity: " + rarity);
       System.out.println("Health: " + health);
       System.out.println("Speed: " + speed);
-      System.out.println("Bawler is Meta: " + isMeta);
+      System.out.println("Brawler is Meta: " + isMeta);
       System.out.println("Class: " + brawlerClass);
       System.out.println("Level: " + level);
       System.out.println("Has Hypercharge: " + hasHypercharge);
+      System.out.println();
    }
    public void gameUpdate(){
       //randomly picks to make brawler meta or not
